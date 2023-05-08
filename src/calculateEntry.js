@@ -5,7 +5,6 @@ const countEntrants = (entrants) => {
 };
 
 const calculateEntry = (entrants) => {
-  
 };
 
 module.exports = { calculateEntry, countEntrants };
