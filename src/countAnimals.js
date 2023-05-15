@@ -16,5 +16,5 @@ const countAnimals = (animal) => {
   if (animal.sex) return encontraBySex.length;
   return encontraSpecie.residents.length;
 };
-console.log(countAnimals({ species: 'giraffes'}));
+console.log(countAnimals({ species: 'giraffes' }));
 module.exports = countAnimals;
