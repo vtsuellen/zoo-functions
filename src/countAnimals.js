@@ -2,19 +2,19 @@ const { species } = require('../data/zoo_data');
 const data = require('../data/zoo_data');
 
 const countAnimals = (animal) => {
-  const resultado = {};
+  const result = {};
   if (!animal) {
     data.species.forEach((specie) => {
-      resultado[specie.name] = specie.residents.length;
+      result[specie.name] = specie.residents.length;
     });
-    return resultado;
+    return result;
   }
-  const encontraSpecie = species.find((specie) => specie.name === animal.species);
-  const encontraBySex = encontraSpecie.residents
+  const findSpecie = species.find((specie) => specie.name === animal.species);
+  const findBySex = findSpecie.residents
     .filter((elemento) => elemento.sex === animal.sex);
 
-  if (animal.sex) return encontraBySex.length;
-  return encontraSpecie.residents.length;
+  if (animal.sex) return findBySex.length;
+  return findSpecie.residents.length;
 };
 console.log(countAnimals({ species: 'giraffes' }));
 module.exports = countAnimals;
