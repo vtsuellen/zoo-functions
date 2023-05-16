@@ -19,6 +19,7 @@ const getEmployee = employees.map((element) => {
       (id) => species.find((specie) => specie.id === id).location,
     ),
   };
+  console.log(object);
   return object;
 });
 
