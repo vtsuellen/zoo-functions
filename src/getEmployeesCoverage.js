@@ -29,6 +29,7 @@ const getEmployeesCoverage = (param) => {
   const validação = getEmployee.find((element) =>
     element.fullName.includes(Object.values(param))
 || element.id.includes(Object.values(param)));
+
   if (!validação) throw new Error('Informações inválidas');
   return validação;
 };

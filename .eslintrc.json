@@ -4,6 +4,9 @@
   },
   "extends": "trybe-fundamentals",
   "rules": {
+    "quotes":[
+      "error", "single"
+    ],
     "max-lines": "off",
     "max-params": "off",
     "linebreak-style": "off",
